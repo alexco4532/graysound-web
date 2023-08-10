@@ -54,7 +54,7 @@ function Form() {
             </div>
             <div className='mt-[32px]'>
                 <label >Wiadomość</label>
-                <textarea placeholder='Twój adres email' value={message} onChange={(event) => setMessage(event.target.value)} className='bg-block w-full min-h-[200px] max-h-[280px] rounded-2xl py-4 border border-[#1e1e31] outline-none px-5 font-Main mt-2 text-base ' />
+                <textarea placeholder='Twoja wiadomość' value={message} onChange={(event) => setMessage(event.target.value)} className='bg-block w-full min-h-[200px] max-h-[280px] rounded-2xl py-4 border border-[#1e1e31] outline-none px-5 font-Main mt-2 text-base ' />
             </div>
             <div className='md:flex md:items-center md:justify-between md:mt-[32px]'>
                 <div className='mt-[32px] md:mt-0'>
