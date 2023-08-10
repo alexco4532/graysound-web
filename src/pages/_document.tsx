@@ -16,7 +16,7 @@ export default function Document() {
       <body className="bg-bodyBg text-white">
         <Main />
         <NextScript />
-        <Script src="/livechat.js" />
+        {/* <Script src="/livechat.js" /> */}
       </body>
     </Html>
   );
