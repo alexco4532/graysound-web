@@ -4,15 +4,18 @@ function ProsCardContent({
   cardInfo,
 }: {
   cardInfo: {
+    id: string;
     title: string;
     text: string;
     isBadge: boolean;
+    bgImg: string;
+    alt: string;
     badgeName?: string;
     badgeTitle?: string;
   };
 }) {
   return (
-    <>
+    <article>
       <h2 className="text-2xl small:text-[20px] small:leading-[1.4] font-extrabold">{cardInfo.title}</h2>
       <p className="text-[14px] small:text-[14px] text-textGrayBlock mt-2 xl:mt-2 font-medium">
         {cardInfo.text}
@@ -28,7 +31,7 @@ function ProsCardContent({
           </h3>
         </div>
       ) : null}
-    </>
+    </article>
   );
 }
 

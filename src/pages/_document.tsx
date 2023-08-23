@@ -1,6 +1,5 @@
 import Navbar from "@/components/sections/navbar";
 import { Html, Head, Main, NextScript } from "next/document";
-import Script from "next/script";
 
 export default function Document() {
   return (
@@ -16,7 +15,6 @@ export default function Document() {
       <body className="bg-bodyBg text-white">
         <Main />
         <NextScript />
-        {/* <Script src="/livechat.js" /> */}
       </body>
     </Html>
   );

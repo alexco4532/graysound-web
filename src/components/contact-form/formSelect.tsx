@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import { RadioGroup } from '@headlessui/react'
 
-type Plan = { name: string; index: number }
+type Service = { name: string; index: number }
 
-export default function FormSelect({ plans, selected, setSelect }: { plans: Plan[], selected: Plan, setSelect: (plan: Plan) => void }) {
+export default function FormSelect({ services, selected, setSelect }: { services: Service[], selected: Service, setSelect: (plan: Service) => void }) {
 
     return (
         <div className="w-full mt-2">
@@ -11,10 +11,10 @@ export default function FormSelect({ plans, selected, setSelect }: { plans: Plan
                 <RadioGroup value={selected} onChange={setSelect}>
                     <RadioGroup.Label className="sr-only">Project type</RadioGroup.Label>
                     <div className='flex flex-wrap justify-between gap-x-4 gap-y-5'>
-                        {plans.map((plan, index) => (
+                        {services.map((service, index) => (
                             <RadioGroup.Option
-                                key={plan.name}
-                                value={plan}
+                                key={service.name}
+                                value={service}
                             >
                                 {({ active, checked }) => (
                                     <>
@@ -23,7 +23,7 @@ export default function FormSelect({ plans, selected, setSelect }: { plans: Plan
                                                 as="p"
                                                 className={`font-medium text-base  ${index === selected.index ? 'text-[#CC9852] ' : 'text-white '}`}
                                             >
-                                                {plan.name}
+                                                {service.name}
                                             </RadioGroup.Label>
                                         </div>
                                     </>

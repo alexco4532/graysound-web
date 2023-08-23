@@ -21,6 +21,8 @@ module.exports = {
       },
       screens: {
         small: { max: '362px' },
+        medium: { min: '382px', max: '431px' },
+        mediumxl: { min: '432px', max: '620px' },
         phones: { max: '767px' },
         tablets: { min: '768px', max: '1024px' },
         default: { min: '1024px', max: '1899px' },

@@ -2,18 +2,18 @@ import { create } from 'zustand';
 
 interface PlayerState {
   isOpen: boolean;
-  trackIndex: number;
+  audioIndex: number;
   openPlayer: () => void;
   closePlayer: () => void;
-  setTrackIndex: (newIndex: number) => void;
+  setAudioIndex: (newIndex: number) => void;
 }
 
 const usePlayerStore = create<PlayerState>((set) => ({
   isOpen: false,
-  trackIndex: 0,
+  audioIndex: 0,
   openPlayer: () => set({ isOpen: true }),
   closePlayer: () => set({ isOpen: false }),
-  setTrackIndex: (newIndex) => set((state) => ({ trackIndex: newIndex }))
+  setAudioIndex: (newIndex) => set((state) => ({ audioIndex: newIndex }))
 }));
 
 export default usePlayerStore;
