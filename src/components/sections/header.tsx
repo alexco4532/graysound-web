@@ -7,7 +7,7 @@ import HeroText from "../header/hero-text";
 
 function HeaderSection() {
   // Initialize Chatwoot event tracking
-  // useChatwootEvent();
+  useChatwootEvent();
 
   return (
     <section className={`w-full lg:flex lg:mt-10`}>
