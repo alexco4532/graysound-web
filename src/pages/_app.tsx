@@ -6,7 +6,7 @@ import ChatwootWidget from './../components/chatwoot/chatwoot-widget';
 
 export default function App({ Component, pageProps }: AppProps) {
   return <>
-    <ChatwootWidget />
+    {/* <ChatwootWidget /> */}
     <Component {...pageProps} />
     <ToastContainerWrapper />
   </>
