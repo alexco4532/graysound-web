@@ -20,18 +20,18 @@ function FooterSection() {
             <div className=' text-center mt-12 text-base lg:text-left lg:mt-0 '>
                 {/* Address Section */}
                 <div>
-                    <h3 className='font-extrabold'>Adres:</h3>
-                    <p className='font-medium'>Warszawa, Niewiadoma 49</p>
+                    <h3 className='font-extrabold'>Dane firmy:</h3>
+                    <p className='font-medium'>Jakub Sampławski GraySound <br />Rozbrat 16/18 m.35 00-447 Warszawa<br />NIP 7010992840</p>
                 </div>
                 {/* Email Section */}
                 <div className='mt-4'>
                     <h3 className='font-extrabold'>Adres email:</h3>
-                    <p className='font-medium'>hello@graysoundlab.com</p>
+                    <p className='font-medium'>kontakt@graysoundlab.com</p>
                 </div>
                 {/* Phone Number Section */}
                 <div className='mt-4'>
                     <h3 className='font-extrabold'>Numer telefonu:</h3>
-                    <p className='font-normal'>+48 333 452 523</p>
+                    <p className='font-normal'>728 466 399</p>
                 </div>
             </div>
 
@@ -40,11 +40,11 @@ function FooterSection() {
                 <h3 className='font-extrabold'>Przydatne linki</h3>
                 {/* List of useful links */}
                 <ul>
-                    <li onClick={pageIsNotReady} className='mt-3 font-medium cursor-pointer'>Polityka prywatności</li>
-                    <li onClick={pageIsNotReady} className='mt-3 font-medium cursor-pointer'>Regulamin</li>
-                    <li onClick={pageIsNotReady} className='mt-3 font-medium cursor-pointer'>Kalkulator wyceny</li>
-                    <li onClick={pageIsNotReady} className='mt-3 font-medium cursor-pointer'>Baza głosów</li>
-                    <li onClick={pageIsNotReady} className='mt-3 font-medium cursor-pointer'>Postęp projektu</li>
+                    <li onClick={pageIsNotReady} className='mt-3 font-medium cursor-pointer lg:hover:text-gray-400'>Polityka prywatności</li>
+                    <li onClick={pageIsNotReady} className='mt-3 font-medium cursor-pointer lg:hover:text-gray-400'>Regulamin</li>
+                    <li onClick={pageIsNotReady} className='mt-3 font-medium cursor-pointer lg:hover:text-gray-400'>Kalkulator wyceny</li>
+                    <li onClick={pageIsNotReady} className='mt-3 font-medium cursor-pointer lg:hover:text-gray-400'>Baza głosów</li>
+                    <li onClick={pageIsNotReady} className='mt-3 font-medium cursor-pointer lg:hover:text-gray-400'>Postęp projektu</li>
                 </ul>
             </div>
 
@@ -52,14 +52,20 @@ function FooterSection() {
             <div className='text-center mt-12 lg:text-left lg:mt-0'>
                 <h3 className='font-extrabold'>Nasze social media</h3>
                 <ul className='flex justify-center mt-2 '>
-                    <li className='w-[80px] h-[80px] lg:-ml-4'>
-                        <InstagramIcon />
+                    <li className='w-[80px] h-[80px] lg:-ml-4 lg:hover:scale-105 lg:duration-200'>
+                        <a target="_blank" href='https://www.instagram.com/graysoundlab/'>
+                            <InstagramIcon />
+                        </a>
                     </li>
-                    <li className='w-[80px] h-[80px] -ml-4'>
-                        <FacebookIcon />
+                    <li className='w-[80px] h-[80px] -ml-4 lg:hover:scale-105 lg:duration-200'>
+                        <a target="_blank" href='https://www.facebook.com/people/GraySound/100091991017805/'>
+                            <FacebookIcon />
+                        </a>
                     </li>
-                    <li className=' w-[80px] h-[80px] -ml-4'>
-                        <LinkedInIcon />
+                    <li className=' w-[80px] h-[80px] -ml-4 lg:hover:scale-105 lg:duration-200'>
+                        <a target="_blank" href='https://www.linkedin.com/in/jakub-samp%C5%82awski-ab236b285/'>
+                            <LinkedInIcon />
+                        </a>
                     </li>
                 </ul>
                 {/* Additional margin at the bottom */}

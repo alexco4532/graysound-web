@@ -29,6 +29,15 @@ export default function Navbar() {
     toast.dark("Podstrona jest obecnie w budowie 🛠️", { autoClose: 2500 });
   }
 
+  const goToPorftolio = () => {
+    router.push('/');
+  }
+
+  const goToPortfolioMobile = () => {
+    setMobileMenuOpen(false);
+    return router.push('/#portfolio');
+  }
+
   const goToContactForm = () => {
     setMobileMenuOpen(false);
     return router.push('/#kontakt');
@@ -57,7 +66,7 @@ export default function Navbar() {
           </button>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
-          <Popover className="relative">
+          {/* <Popover className="relative">
             <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-white outline-none">
               Usługi
               <ChevronDownIcon
@@ -103,7 +112,8 @@ export default function Navbar() {
                 </div>
               </Popover.Panel>
             </Transition>
-          </Popover>
+          </Popover> */}
+          <NavbarButton onClick={goToPorftolio}>Portfolio</NavbarButton>
           <NavbarButton onClick={pageIsNotReady}>Baza głosów</NavbarButton>
           <NavbarButton onClick={pageIsNotReady}>Kalkulator wyceny</NavbarButton>
           <NavbarButton onClick={goToContactForm}>Kontakt</NavbarButton>
@@ -111,7 +121,7 @@ export default function Navbar() {
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <button
             onClick={openLiveChat}
-            className="text-sm font-bold leading-6 text-white py-[10px] px-5 rounded-full  bg-block"
+            className="text-sm font-bold leading-6 text-white lg:hover:text-gray-400 py-[10px] px-5 rounded-full  bg-block"
           >
             Wyceń swój projekt
           </button>
@@ -141,7 +151,7 @@ export default function Navbar() {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-                <Disclosure as="div" className="-mx-3">
+                {/* <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
                       <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-white cursor-none lg:cursor-pointer">
@@ -165,7 +175,12 @@ export default function Navbar() {
                       </Disclosure.Panel>
                     </>
                   )}
-                </Disclosure>
+                </Disclosure> */}
+                <NavbarButtonMobile
+                  onClick={goToPortfolioMobile}
+                >
+                  Portfolio
+                </NavbarButtonMobile>
                 <NavbarButtonMobile
                   onClick={pageIsNotReady}
                 >

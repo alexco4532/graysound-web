@@ -14,14 +14,15 @@ function Form() {
     const chatwootIsReady = useChatwootStore((state) => state.isReady);
     const [email, setEmail] = useState<string>("");
     const [message, setMessage] = useState<string>("");
-    const [selected, setSelected] = useState<Service>(servicesList[0]);
+    // const [selected, setSelected] = useState<Service>(servicesList[0]);
     const [isSending, setIsSending] = useState<boolean>(false);
 
     // Form submit function
     const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setIsSending(true);
-        const data = { type: selected.name, email: email, message: message };
+        // const data = { type: selected.name, email: email, message: message };
+        const data = { email: email, message: message };
 
         try {
             const response = await fetch("/api/send", {
@@ -56,17 +57,17 @@ function Form() {
 
 
     // Callback to handle service selection
-    const handleSelect = useCallback(
-        (plan: Service) => {
-            setSelected(plan);
-        },
-        [],
-    )
+    // const handleSelect = useCallback(
+    //     (plan: Service) => {
+    //         setSelected(plan);
+    //     },
+    //     [],
+    // )
 
     return (
         <form className='max-w-[480px]' onSubmit={onSubmit}>
-            <p className='mt-[32px]'>Typ projektu</p>
-            <FormSelect services={servicesList} selected={selected} setSelect={(service) => handleSelect(service)} />
+            {/* <p className='mt-[32px]'>Typ projektu</p> */}
+            {/* <FormSelect services={servicesList} selected={selected} setSelect={(service) => handleSelect(service)} /> */}
             <EmailInput value={email} onChange={setEmail} />
             <MessageInput value={message} onChange={setMessage} />
             <div className='md:flex md:items-center md:justify-between md:mt-[32px]'>

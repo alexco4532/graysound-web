@@ -26,11 +26,11 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, index, openAu
         <div className="w-full mx-auto  mt-2 lg:w-[90%] xl:w-[84%]">
             <img src={project.photoUrl} alt='Project thumbnail' width="96%" className="mx-auto rounded-3xl" />
         </div>
-        <button className="mx-auto flex items-center justify-center w-[96%] py-5 bg-block rounded-full mt-6 lg:w-[80%] lg:py-4 lg:mt-5 cursor-none lg:cursor-pointer" onClick={() => openAudioPlayer(index)}>
-            <p className="text-[18px] lg:text-sm font-bold">
+        <button className="group mx-auto flex items-center justify-center w-[96%] py-5 bg-block rounded-full mt-6 lg:w-[80%] lg:py-4 lg:mt-5 cursor-none lg:cursor-pointer" onClick={() => openAudioPlayer(index)}>
+            <p className="text-[18px] lg:text-sm font-bold lg:group-hover:text-gray-400">
                 Odsłuchaj fragment
             </p>
-            <SpeakerWaveIcon className="w-5 h-5 ml-2 text-white lg:ml-1 lg:w-4 lg:h-4" />
+            <SpeakerWaveIcon className="w-5 h-5 ml-2 text-white lg:group-hover:text-gray-400 lg:ml-1 lg:w-4 lg:h-4" />
         </button>
     </div>)
 };

@@ -1,4 +1,13 @@
+//Stacja, Skóra, Szum, Hydropolis, Ukochane dziecko
+
 const projectsList = [
+  {
+    title: 'Stacja',
+    rating: 4.6,
+    photoUrl: '/stacja.jpeg',
+    audioUrl: '/stacja.mp3',
+    alt: 'Stacja'
+  },
   {
     title: 'Skóra',
     rating: 4.7,
@@ -7,11 +16,11 @@ const projectsList = [
     alt: 'Skóra'
   },
   {
-    title: 'Ukochane dziecko',
-    rating: 4.8,
-    photoUrl: '/ukochane-dziecko.jpeg',
-    audioUrl: '/ukochanedziecko.mp3',
-    alt: 'Ukochane dziecko'
+    title: 'Szum',
+    rating: 4.7,
+    photoUrl: '/szum.jpeg',
+    audioUrl: '/szum.mp3',
+    alt: 'Szum'
   },
   {
     title: 'Hydropolis',
@@ -21,18 +30,11 @@ const projectsList = [
     alt: 'Hydropolis'
   },
   {
-    title: 'Stacja',
-    rating: 4.6,
-    photoUrl: '/stacja.jpeg',
-    audioUrl: '/stacja.mp3',
-    alt: 'Stacja'
-  },
-  {
-    title: 'Szum',
-    rating: 4.7,
-    photoUrl: '/szum.jpeg',
-    audioUrl: '/szum.mp3',
-    alt: 'Szum'
+    title: 'Ukochane dziecko',
+    rating: 4.8,
+    photoUrl: '/ukochane-dziecko.jpeg',
+    audioUrl: '/ukochanedziecko.mp3',
+    alt: 'Ukochane dziecko'
   }
 ];
 

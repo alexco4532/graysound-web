@@ -4,7 +4,7 @@ import { Resend } from 'resend';
 const resend = new Resend(`${process.env.RESEND_ID}`);
 
 type RequestBody = {
-  type: string;
+  type?: string;
   email: string;
   message: string;
 };
@@ -13,9 +13,9 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   const body: RequestBody = JSON.parse(req.body);
   try {
     const data = await resend.emails.send({
-      from: 'Acme <onboarding@resend.dev>',
-      to: ['alexco4532@gmail.com'],
-      subject: `${body.type} - form`,
+      from: 'Jakub <kontakt@graysoundlab.com>',
+      to: [`${body.email}`],
+      subject: `Formularz`,
       text: `${body.email} asks: ${body.message}`
     });
 

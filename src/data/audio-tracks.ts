@@ -5,8 +5,15 @@ export interface AudioProject {
   url: string;
   photoUrl: string;
 }
-
+//Stacja, Skóra, Szum, Hydropolis, Ukochane dziecko
 const audioProjectsList: AudioProject[] = [
+  {
+    name: 'Stacja',
+    rating: 4.6,
+    amount: '503',
+    url: '/stacja.mp3',
+    photoUrl: '/stacja-small.png'
+  },
   {
     name: 'Skóra',
     rating: 4.7,
@@ -15,11 +22,11 @@ const audioProjectsList: AudioProject[] = [
     photoUrl: '/skora-small.png'
   },
   {
-    name: 'Ukochane dziecko',
-    rating: 4.8,
-    amount: '2k',
-    url: '/ukochanedziecko.mp3',
-    photoUrl: '/ukochane-dziecko-small.png'
+    name: 'Szum',
+    rating: 4.7,
+    amount: '1.1k',
+    url: '/szum.mp3',
+    photoUrl: '/szum-small.png'
   },
   {
     name: 'Hydropolis',
@@ -29,18 +36,11 @@ const audioProjectsList: AudioProject[] = [
     photoUrl: '/hydropolis-small.png'
   },
   {
-    name: 'Stacja',
-    rating: 4.6,
-    amount: '503',
-    url: '/stacja.mp3',
-    photoUrl: '/stacja-small.png'
-  },
-  {
-    name: 'Szum',
-    rating: 4.7,
-    amount: '1.1k',
-    url: '/szum.mp3',
-    photoUrl: '/szum-small.png'
+    name: 'Ukochane dziecko',
+    rating: 4.8,
+    amount: '2k',
+    url: '/ukochanedziecko.mp3',
+    photoUrl: '/ukochane-dziecko-small.png'
   },
   {
     name: '3D demo projekt',

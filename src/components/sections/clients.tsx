@@ -29,7 +29,7 @@ function ClientsSection() {
             {/* Container for the client image and their review */}
             <div className='md:flex md:flex-row-reverse md:justify-between md:ml-8 mt-8 md:mt-12'>
                 {/* Client's Image */}
-                <img src={clientsReviews[reviewIndex].img} alt="Client Testimonial" className='w-full rounded-3xl md:h-[380px] xl:h-[420px] md:max-w-[360px] xl:max-w-[380px] xl:mr-10' />
+                <img src={clientsReviews[reviewIndex].img} alt="Client Testimonial" className='w-full rounded-3xl md:h-[380px] xl:h-[420px] md:max-w-[360px] xl:max-w-[380px] xl:mr-10 object-cover object-top' />
 
                 {/* Review container */}
                 <div className='mt-[24px] md:max-w-[380px] lg:max-w-[460px] md:flex md:flex-col md:justify-between'>
@@ -37,7 +37,7 @@ function ClientsSection() {
                         <blockquote>
                             <Quote />
                             {/* Text of the review */}
-                            <p className='mt-1 text-xl md:text-base xl:text-xl  md:pr-12 xl:pr-0  font-medium '>{clientsReviews[reviewIndex].text}</p>
+                            <p className='mt-1 text-xl md:text-base  md:pr-12 xl:pr-0 font-normal'>{clientsReviews[reviewIndex].text}</p>
                         </blockquote>
                         {/* Reviewer's Name and Position/Title */}
                         <cite>

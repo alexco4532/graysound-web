@@ -30,7 +30,7 @@ function SpatialSoundSection() {
                 <p className='text-center md:text-center md:mx-auto text-sm md:text-base small:text-[14px] text-textGray mt-[12px] xl:mt-[16px] font-medium md:w-[462px] lg:text-left lg:pr-9  lg:w-full'>W GraySound wykorzystujemy zaawansowaną technikę binauralną 3D, dzięki której kreujemy fascynującą rzeczywistość, przenosząc słuchacza w sam środek wydarzeń. Każdy dźwięk jest starannie przemyślany i żyję wokół Ciebie, tworząc wrażenie, że przenosisz się do zupełnie nowego świata. Pozwól Twoim słuchaczom nie tylko słuchać, ale prawdziwie doświadczać Twojej historii z GraySound</p>
                 {/* Button to open the audio player */}
                 <div className="mt-[40px]">
-                    <button className=" mx-auto flex items-center justify-between px-8 py-4 bg-gradient-to-r from-[#E6B573] to-[#CC9852] rounded-full lg:mx-0 xl:py-4 xl:px-6 xl:mt-10 cursor-none lg:cursor-pointer " onClick={handleOpenAudioPlayer}>
+                    <button className=" mx-auto flex items-center justify-between px-8 py-4 bg-gradient-to-r from-[#E6B573] to-[#CC9852] rounded-full lg:mx-0 xl:py-4 xl:px-6 xl:mt-10 lg:hover:scale-105 lg:duration-300 cursor-none lg:cursor-pointer " onClick={handleOpenAudioPlayer}>
                         <h2 className="text-base font-extrabold text-bodyBg xl:text-sm">
                             Fragment projektu 3D
                         </h2>
