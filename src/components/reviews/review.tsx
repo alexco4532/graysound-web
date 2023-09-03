@@ -13,7 +13,7 @@ function Review({ review }: { review: ReviewProps }) {
     return (
         <div className="px-1 ">
             {/* Card container for the review */}
-            <div className='bg-block p-6 h-[336px] md:h-[260px] md:w-[336px] rounded-3xl mx-auto border border-[#1e1e31]'>
+            <div className='bg-block p-6 h-[400px] md:h-[288px] md:w-[336px] rounded-3xl mx-auto border border-[#1e1e31]'>
                 {/* Header row containing the reviewer's info and source icon */}
                 <div className='flex flex-row justify-between items-start'>
                     {/* Thumbnail and information */}

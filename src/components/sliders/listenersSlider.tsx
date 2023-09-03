@@ -22,7 +22,7 @@ function ListenersSlider() {
         slidesToShow: isMobile ? 1 : isTablet ? 2 : 3,
         slidesToScroll: 1,
         arrows: false,
-        dots: true,
+        dots: isMobile ? false : true,
     };
 
     useEffect(() => setMounted(true), []);
