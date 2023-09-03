@@ -29,7 +29,7 @@ export default function Home() {
           <DynamicSections />
         </div>
       </main>
-      <Script id='CookieDeclaration' src="https://consent.cookiebot.com/65eac2d6-81a4-4a72-9272-9710402a045e/cd.js" type='text/javascript' async />
+      
     </>
   );
 }

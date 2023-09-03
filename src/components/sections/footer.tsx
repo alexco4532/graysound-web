@@ -4,8 +4,18 @@ import InstagramIcon from '../icons/instagram'
 import FacebookIcon from '../icons/facebook'
 import LinkedInIcon from '../icons/linkedin'
 import { toast } from 'react-toastify'
+import { useRouter } from 'next/router'
 
 function FooterSection() {
+    const router = useRouter();
+    const goToPrivacyPolicy = () => {
+        router.push('/prywatnosc');
+    }
+
+    const goToCookiesInfo = () => {
+        router.push('/cookies');
+    }
+
     const pageIsNotReady = () => {
         toast.dark("Podstrona jest obecnie w budowie 🛠️", { autoClose: 2500 });
     }
@@ -40,8 +50,8 @@ function FooterSection() {
                 <h3 className='font-extrabold'>Przydatne linki</h3>
                 {/* List of useful links */}
                 <ul>
-                    <li onClick={pageIsNotReady} className='mt-3 font-medium cursor-pointer lg:hover:text-gray-400'>Polityka prywatności</li>
-                    <li onClick={pageIsNotReady} className='mt-3 font-medium cursor-pointer lg:hover:text-gray-400'>Regulamin</li>
+                    <li onClick={goToPrivacyPolicy} className='mt-3 font-medium cursor-pointer lg:hover:text-gray-400'>Polityka prywatności</li>
+                    <li onClick={goToCookiesInfo} className='mt-3 font-medium cursor-pointer lg:hover:text-gray-400'>Informacje o cookies</li>
                     <li onClick={pageIsNotReady} className='mt-3 font-medium cursor-pointer lg:hover:text-gray-400'>Kalkulator wyceny</li>
                     <li onClick={pageIsNotReady} className='mt-3 font-medium cursor-pointer lg:hover:text-gray-400'>Baza głosów</li>
                     <li onClick={pageIsNotReady} className='mt-3 font-medium cursor-pointer lg:hover:text-gray-400'>Postęp projektu</li>
