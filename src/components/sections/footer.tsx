@@ -41,7 +41,7 @@ function FooterSection() {
                 {/* Phone Number Section */}
                 <div className='mt-4'>
                     <h3 className='font-extrabold'>Numer telefonu:</h3>
-                    <p className='font-normal'>728 466 399</p>
+                    <p className='font-normal'>501 541 157</p>
                 </div>
             </div>
 
