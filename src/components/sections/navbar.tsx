@@ -14,6 +14,7 @@ import useChatwootStore from "@/hooks/use-chatwoot-store";
 import services from "@/data/navbar-links";
 import NavbarButton from "../navbar/navbar-button";
 import NavbarButtonMobile from "../navbar/navbar-button-mobile";
+import Link from "next/link";
 
 export default function Navbar() {
   const router = useRouter();
@@ -50,10 +51,10 @@ export default function Navbar() {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <a href="/" className="">
+          <Link href="/" className="">
             <span className="sr-only">Graysound</span>
             <LogoNav />
-          </a>
+          </Link>
         </div>
         <div className="flex lg:hidden">
           <button
