@@ -50,8 +50,12 @@ function FooterSection() {
                 <h3 className='font-extrabold'>Przydatne linki</h3>
                 {/* List of useful links */}
                 <ul>
-                    <li onClick={goToPrivacyPolicy} className='mt-3 font-medium cursor-pointer lg:hover:text-gray-400'>Polityka prywatności</li>
-                    <li onClick={goToCookiesInfo} className='mt-3 font-medium cursor-pointer lg:hover:text-gray-400'>Informacje o cookies</li>
+                    <li className='mt-3 font-medium cursor-pointer lg:hover:text-gray-400'>
+                        <a target="_blank" href='/prywatnosc'>Polityka prywatności</a>
+                    </li>
+                    <li className='mt-3 font-medium cursor-pointer lg:hover:text-gray-400'>
+                        <a target="_blank" href='/cookies'>Informacje o cookies</a>
+                    </li>
                     <li onClick={pageIsNotReady} className='mt-3 font-medium cursor-pointer lg:hover:text-gray-400'>Kalkulator wyceny</li>
                     <li onClick={pageIsNotReady} className='mt-3 font-medium cursor-pointer lg:hover:text-gray-400'>Baza głosów</li>
                     <li onClick={pageIsNotReady} className='mt-3 font-medium cursor-pointer lg:hover:text-gray-400'>Postęp projektu</li>
