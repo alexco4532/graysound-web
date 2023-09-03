@@ -21,7 +21,7 @@ const clientsReviews = [
     text: `"W mojej roli jako aktorka i słuchaczka, GraySound spełnia wszystkie moje oczekiwania na najwyższym poziomie. Studio łączy profesjonalizm i kreatywność, oferując przy tym wysoki poziom artystyczny i efekty, które zawsze robią wrażenie. Jako aktorka cenię również dobrą organizację pracy, co również jest mocną stroną GraySound. Jako słuchaczka, jestem równie zadowolona z jakości ich produkcji. W sumie, GraySound to miejsce, gdzie można znaleźć to, czego szukasz jako artysta i odbiorca. Życzę powodzenia i nie mogę się doczekać nowych produkcji. Latajcie wysoko!"`,
     name: 'Olga Sawicka',
     title: 'Aktorka',
-    img: 'fourth.jpg'
+    img: 'fourth.JPG'
   }
 ];
 
