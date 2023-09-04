@@ -23,7 +23,7 @@ export function ThanksEmail() {
                 <Container style={container}>
                     <Img
                         src={`https://graysoundlab.b-cdn.net/v1/graysound-logo.png`}
-                        height="50"
+                        height="28"
                         alt="Graysound - logo"
                         style={logo}
                     />
