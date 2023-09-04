@@ -4,8 +4,6 @@ import { Resend } from 'resend';
 
 const resend = new Resend(`${process.env.RESEND_ID}`);
 
-//text: `Z ogromnym entuzjazmem otrzymaliśmy Twoje zapytanie i chcielibyśmy serdecznie podziękować za zainteresowanie naszymi usługami. Już teraz cieszymy się na myśl o potencjalnej współpracy i jesteśmy pewni, że będziemy mogli spełnić Twoje oczekiwania. Twoje zapytanie zostało natychmiastowo przekazane do naszej reżyserki, która odpowie na twoje wszystkie pytania. Martyna skontaktuje się z Tobą jak najszybciej, aby omówić wszelkie szczegóły i przejść do kolejnych etapów realizacji. Dziękujemy za wybór GraySound i nie możemy się doczekać, aby przekształcić Twoją wizję w rzeczywistość. Z serdecznymi pozdrowieniami, Zespół GraySound`
-
 type RequestBody = {
   type?: string;
   email: string;
@@ -27,7 +25,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
       to: [
         'kontakt@graysoundlab.com',
         'valgardviggo@gmail.com',
-        'j.samplawski@gmail.com',
+        'jakub.samplawski@gmail.com',
         'j.samplawski@graysoundlab.com',
         'm.szymanska@graysoundlab.com'
       ],
