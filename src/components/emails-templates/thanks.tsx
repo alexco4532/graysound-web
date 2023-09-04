@@ -21,6 +21,12 @@ export function ThanksEmail() {
             </Preview>
             <Body style={main}>
                 <Container style={container}>
+                    <Img
+                        src={`https://graysoundlab.b-cdn.net/v1/graysound-logo.png`}
+                        height="50"
+                        alt="Graysound - logo"
+                        style={logo}
+                    />
                     <Text style={paragraph}>
                         Z ogromnym entuzjazmem otrzymaliśmy Twoje zapytanie i chcielibyśmy serdecznie podziękować za zainteresowanie naszymi usługami. Już teraz cieszymy się na myśl o potencjalnej współpracy i jesteśmy pewni, że będziemy mogli spełnić Twoje oczekiwania.
                     </Text>
@@ -54,7 +60,6 @@ const container = {
 };
 
 const logo = {
-    margin: '0 auto',
 };
 
 const paragraph = {
