@@ -57,6 +57,8 @@ const main = {
 const container = {
     margin: '0 auto',
     padding: '20px 0 48px',
+    paddingLeft: '16px',
+    paddingRight: '16px',
 };
 
 const logo = {
@@ -65,6 +67,7 @@ const logo = {
 const paragraph = {
     fontSize: '16px',
     lineHeight: '26px',
+
     color: '#fff',
 };
 
