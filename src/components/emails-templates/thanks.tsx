@@ -43,7 +43,7 @@ export function ThanksEmail() {
 export default ThanksEmail;
 
 const main = {
-    backgroundColor: '#ffffff',
+    backgroundColor: '#0B0B14',
     fontFamily:
         '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif',
 };
@@ -60,6 +60,7 @@ const logo = {
 const paragraph = {
     fontSize: '16px',
     lineHeight: '26px',
+    color: '#fff',
 };
 
 const hr = {
