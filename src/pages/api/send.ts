@@ -16,11 +16,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
       from: 'Graysound <noreply@graysoundlab.com>',
       to: [`${body.email}`],
       subject: `Formularz zgłoszeniowy - Graysound`,
-      text: `Z ogromnym entuzjazmem otrzymaliśmy Twoje zapytanie i chcielibyśmy serdecznie podziękować za zainteresowanie naszymi usługami. Już teraz cieszymy się na myśl o potencjalnej współpracy i jesteśmy pewni, że będziemy mogli spełnić Twoje oczekiwania.
-      
-      Twoje zapytanie zostało natychmiastowo przekazane do naszej reżyserki, która odpowie na twoje wszystkie pytania. Martyna skontaktuje się z Tobą jak najszybciej, aby omówić wszelkie szczegóły i przejść do kolejnych etapów realizacji. Dziękujemy za wybór GraySound i nie możemy się doczekać, aby przekształcić Twoją
-      wizję w rzeczywistość. Z serdecznymi pozdrowieniami,
-      Zespół GraySound`
+      text: `Z ogromnym entuzjazmem otrzymaliśmy Twoje zapytanie i chcielibyśmy serdecznie podziękować za zainteresowanie naszymi usługami. Już teraz cieszymy się na myśl o potencjalnej współpracy i jesteśmy pewni, że będziemy mogli spełnić Twoje oczekiwania. Twoje zapytanie zostało natychmiastowo przekazane do naszej reżyserki, która odpowie na twoje wszystkie pytania. Martyna skontaktuje się z Tobą jak najszybciej, aby omówić wszelkie szczegóły i przejść do kolejnych etapów realizacji. Dziękujemy za wybór GraySound i nie możemy się doczekać, aby przekształcić Twoją wizję w rzeczywistość. Z serdecznymi pozdrowieniami, Zespół GraySound`
     });
 
     const notification = await resend.emails.send({
